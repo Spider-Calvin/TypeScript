@@ -1,7 +1,7 @@
 // Rest Operator
-// type FuncType = (...m: number[]) => number [];
+type FuncType = (...m: number[]) => number[];
 
-const func=(...m:number[]) => {
+const func:FuncType = (...m) => {
     return m;
 };
 

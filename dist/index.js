@@ -1,6 +1,4 @@
 "use strict";
-// Rest Operator
-// type FuncType = (...m: number[]) => number [];
 const func = (...m) => {
     return m;
 };
