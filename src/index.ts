@@ -1,25 +1,8 @@
-interface objtype {
-    height: number,
-    weight: number,
-    gender?:string //we made the gender optional
-}
+type FuncType = (n: number, m: number, l?: number) => number;
 
-const obj1:objtype ={
-    height:12,
-    weight:30
-}
+const func: FuncType = (n, m, l) => {
+    if (typeof 1 === "undefined") return n*m;
+    return n * m * 1;
+};
 
-interface Newobjtype extends objtype {
-    firstname:string,
-    lastname:string,
-    func?:()=>void,
-}
-
-const obj2:Newobjtype = {
-    height:23,
-    weight:10,
-    firstname:'Spider',
-    lastname:'Calvin',
-    func : ()=>console.log('Calvin is logging')
-
-}
+func(25, 23);
