@@ -1,6 +1,7 @@
-let surname : string | number;
-surname = 12
-surname ='calvin';
+type userName = string | number;
+
+let a:userName = 23;
+console.log(a);
 
 const func = (n:number,m:string) :number =>{
  console.log(n,m);
@@ -8,4 +9,3 @@ const func = (n:number,m:string) :number =>{
 }
 
 func(2,'calvin');
-alert(surname);
