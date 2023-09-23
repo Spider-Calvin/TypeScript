@@ -1,6 +1,5 @@
-let a:string = '1234';
-let naam:number  = 23;
-let check:boolean = false;
+let a;
+let b:any = 123
+//we have a concept called any
 
 alert(a);
-console.log(naam)

@@ -1,6 +1,5 @@
 "use strict";
-let a = '1234';
-let naam = 23;
-let check = false;
+let a;
+let b = 123;
+//we have a concept called any
 alert(a);
-console.log(naam);
