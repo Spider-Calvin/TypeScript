@@ -1,4 +1,5 @@
 "use strict";
-const a = 1234;
+let a = 1234;
+let naam = "Spider";
 alert(a);
-console.log(a);
+console.log(naam);
