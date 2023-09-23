@@ -1,6 +1,5 @@
-let a;
-let b:any = 123
-let nambo = <unknown>'hello this another methord of declaring and assinging values';
-//we have a concept called any
+let surname : string | number;
+surname = 12
+surname ='calvin'
 
-alert(a);
+alert(surname);
