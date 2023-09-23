@@ -1,7 +1,7 @@
 type objtype = {
     height: number,
     weight: number,
-    gender:string
+    gender?:string //we made the gender optional
 }
 
 const obj:objtype ={
@@ -10,3 +10,7 @@ const obj:objtype ={
     gender:'male'
 }
 
+const obj1:objtype ={
+    height:12,
+    weight:30
+}
