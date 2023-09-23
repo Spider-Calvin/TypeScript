@@ -4,12 +4,6 @@ interface objtype {
     gender?:string //we made the gender optional
 }
 
-const obj:objtype ={
-    height:12,
-    weight:30,
-    gender:'male'
-}
-
 const obj1:objtype ={
     height:12,
     weight:30
@@ -17,12 +11,15 @@ const obj1:objtype ={
 
 interface Newobjtype extends objtype {
     firstname:string,
-    lastname:string
+    lastname:string,
+    func?:()=>void,
 }
 
 const obj2:Newobjtype = {
     height:23,
     weight:10,
     firstname:'Spider',
-    lastname:'Calvin'
+    lastname:'Calvin',
+    func : ()=>console.log('Calvin is logging')
+
 }
