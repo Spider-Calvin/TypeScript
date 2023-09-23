@@ -4,7 +4,7 @@ surname = 12;
 surname = 'calvin';
 const func = (n, m) => {
     console.log(n, m);
-    return String(n);
+    return n;
 };
 func(2, 'calvin');
 alert(surname);
