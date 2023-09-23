@@ -1,10 +1,9 @@
-function Lol(n:number): number{
-    return 45
-}
-
-type FuncType = (m: number) => number;
-
-const lol: FuncType = function lol(n){
-    return n
-}
+const getData = (product:{
+    name: string;
+    stock: number; 
+    price: number;
+    photo: string;
+}): void => {
+    console.log (product);
+};
     
