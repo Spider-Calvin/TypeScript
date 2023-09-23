@@ -21,3 +21,14 @@ const productOne: product = {
 };
 
 getData(productOne);
+
+//Never Type
+const err = new Error()
+
+const errorhandler = ()=>{
+    throw new Error(); // on throw returns never type
+}
+
+const errorhandler1 = ()=>{
+    return new Error(); // on return error the type is error
+}
