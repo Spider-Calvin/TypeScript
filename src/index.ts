@@ -1,9 +1,11 @@
-const getData = (product:{
+type GetDataType = (product:{
     name: string;
-    stock: number; 
+    stock: number;
     price: number;
     photo: string;
-}): void => {
-    console.log (product);
+}) => void;
+
+const getData: GetDataType = (product) => {
+    console.log(product);
 };
     
