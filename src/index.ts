@@ -1,8 +1,1 @@
-type functiontype = (n:number, m:number) => number
-
-const func:functiontype = (n,m) =>{
- console.log(n,m);
- return n;
-}
-
-func(2,97);
+const arr:number[] = [12, 24, 36, 48]

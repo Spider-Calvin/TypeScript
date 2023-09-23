@@ -1,6 +1,2 @@
 "use strict";
-const func = (n, m) => {
-    console.log(n, m);
-    return n;
-};
-func(2, 97);
+const arr = [12, 24, 36, 48];
