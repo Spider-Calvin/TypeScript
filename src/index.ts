@@ -1,11 +1,8 @@
-type userName = string | number;
+type functiontype = (n:number, m:number) => number
 
-let a:userName = 23;
-console.log(a);
-
-const func = (n:number,m:string) :number =>{
+const func:functiontype = (n,m) =>{
  console.log(n,m);
  return n;
 }
 
-func(2,'calvin');
+func(2,97);
