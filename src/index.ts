@@ -1,8 +1,10 @@
-// Rest Operator
-type FuncType = (...m: number[]) => number[];
+function Lol(n:number): number{
+    return 45
+}
 
-const func:FuncType = (...m) => {
-    return m;
-};
+type FuncType = (...m: number[]) => number;
 
-func(25, 23, 34, 6, 67, 8, 9);
+const lol: FuncType = function lol(n){
+    return n
+}
+    

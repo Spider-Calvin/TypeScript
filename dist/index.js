@@ -1,5 +1,7 @@
 "use strict";
-const func = (...m) => {
-    return m;
+function Lol(n) {
+    return 45;
+}
+const lol = function lol(n) {
+    return n;
 };
-func(25, 23, 34, 6, 67, 8, 9);
