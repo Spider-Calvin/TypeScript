@@ -1,32 +1,20 @@
 //classes in typescript
+interface ProductType {
+    name: string;
+    price: number;
+    stock: number;
+    id: string;
+    offer?: boolean;
+}
+class Product implements ProductType{
+    public id: string = String(Math.random () * 1000);
+    private lol: boolean = false;
 
-class player {
-    public readonly id:string
-    constructor( private height: number, public weight: number, protected age: number ) {
-        this.height = height;
-        this.weight = weight;
-        this.age = age;
-        this.id = String(Math.random()*100)
-    }
-
-    myheight=()=> {
-       return this.height
-    }
-
-    get getHeight ():number{
-        return this.height
-    }
-
-    set setHeight (value:number){
-        this.height = value
-    }
-
-
+    constructor (
+        public name: string,
+        public price: number,
+        public stock: number
+    ) {}
 }
 
-const abhi = new player(100, 150, 20);
-
-console.log('Height', abhi.getHeight);
-abhi.setHeight = 500;
-console.log('setted Height', abhi.getHeight);
-
+const spider =  new Product('calvin', 10, 20)
