@@ -1,13 +1,17 @@
 //Generics in typescript Most Important topic in typescript
 
-const func = <CustomType>(n: CustomType): CustomType => {
-    const text:CustomType = n;
-    return n;
-};
+type Person = {
+    name:string,
+    age:number
+}    
+    
+const func = <T>(n: T): T => {
+    return n
+}
 
-const ans = func(20);
-const ans2 = func("20");
-const ans3 = func(true);
+const calvin:Person ={
+    name:'calvin',
+    age:22
+}
 
-console.log(typeof (ans))
-console.log(typeof (ans2))
+const ans = func<Person>(calvin)
