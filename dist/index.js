@@ -1,12 +1,6 @@
 "use strict";
 //Generics in typescript Most Important topic in typescript
-const func = (n) => {
-    return n;
+const func = (n, o) => {
+    return { n, o };
 };
-const calvin = {
-    name: 'calvin',
-    age: 22
-};
-const ans = func(calvin);
-const arr = [];
-const arr2 = [];
+const ans = func(20, "Lol");

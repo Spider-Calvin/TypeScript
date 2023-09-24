@@ -5,16 +5,8 @@ type Person = {
     age:number
 }    
     
-const func = <T>(n: T): T => {
-    return n
+const func = <T, U>(n:T,o: U):{ n:T, o:U} => {
+    return { n, o }
 }
-
-const calvin:Person ={
-    name:'calvin',
-    age:22
-}
-
-const ans = func<Person>(calvin);
-
-const arr:number[] = [];
-const arr2:Array<number> = [];
+    
+const ans = func<number, string>(20,"Lol");
