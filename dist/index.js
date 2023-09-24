@@ -29,3 +29,13 @@ const myfunc2 = (a, b) => {
     return a + b;
 };
 // InstanceType<Type>
+class SampleClass2 {
+    constructor(s, t) {
+        this.s = s;
+        this.t = t;
+    }
+}
+const user = {
+    s: 'spider',
+    t: 'calvin'
+};

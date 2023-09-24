@@ -40,3 +40,14 @@ type FuncType = ReturnType< typeof myfunc>
 
 
 // InstanceType<Type>
+
+class SampleClass2 {
+    constructor(public s: string, public t: string) {}
+}
+type Random2 = InstanceType<typeof SampleClass2>
+
+
+const user:Random2 ={
+    s : 'spider',
+    t : 'calvin'
+}
