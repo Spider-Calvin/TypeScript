@@ -1,41 +1,11 @@
 "use strict";
-//Utility CLASS in typeScript
-// Partial<Type>
-// Required<Type>
-// Readonly<Type>
-// Record<Keys, Type>
-// Pick<Type, Keys>
-// Omit<Type, Keys>
-// Exclude<Type, ExcludedUnion>
-// Extract<Type, Union>
-// NonNullable<Type>
-// Parameters<Type>
-// Constructor Parameters<Type>
-// ReturnType<Type>
-// InstanceType<Type>
-// Parameters<Type>
-const myfunc = (a, b) => {
-    console.log(a + b);
+//Generics in typescript Most Important topic in typescript
+const func = (n) => {
+    const text = n;
+    return n;
 };
-// Constructor Parameters<Type>
-class SampleClass {
-    constructor(S, t) {
-        this.S = S;
-        this.t = t;
-    }
-}
-// ReturnType<Type>
-const myfunc2 = (a, b) => {
-    return a + b;
-};
-// InstanceType<Type>
-class SampleClass2 {
-    constructor(s, t) {
-        this.s = s;
-        this.t = t;
-    }
-}
-const user = {
-    s: 'spider',
-    t: 'calvin'
-};
+const ans = func(20);
+const ans2 = func("20");
+const ans3 = func(true);
+console.log(typeof (ans));
+console.log(typeof (ans2));
