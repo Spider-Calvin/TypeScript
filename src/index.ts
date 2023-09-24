@@ -15,16 +15,16 @@
 // InstanceType<Type>
 
 
-// Exclude<Type, ExcludedUnion>
-type MyUnion = string | number | boolean
-type Random = Exclude<MyUnion, boolean>
+// Parameters<Type>
+const myfunc = (a: number, b: string) =>{
+   console. log(a + b);
+};
+
+type Random = Parameters<typeof myfunc> //retuns the parameters as array
 
 
-// Extract<Type, Union>
-type MyUnion2 = string | number | boolean
-type Random2 = Exclude<MyUnion, number>
+// Constructor Parameters<Type>
 
-// NonNullable<Type>
+// ReturnType<Type>
 
-type MyUnion1 = string | number | boolean | null | undefined
-type Random1 = NonNullable<MyUnion>
+// InstanceType<Type>
