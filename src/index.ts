@@ -22,7 +22,7 @@ const getEmail = (): string => {
     return myobject.email;
 };
 
-const getData = (key:"name" | "email"): string => {
+const getData = (key: keyof obj): string => {
     return myobject[key];
 };
 
