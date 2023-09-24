@@ -13,24 +13,20 @@ class player {
        return this.height
     }
 
+    get getHeight ():number{
+        return this.height
+    }
+
+    set setHeight (value:number){
+        this.height = value
+    }
+
+
 }
 
 const abhi = new player(100, 150, 20);
 
-console.log( abhi.myheight());
-console.log(abhi.weight);
+console.log('Height', abhi.getHeight);
+abhi.setHeight = 500;
+console.log('setted Height', abhi.getHeight);
 
-// protected keyboard can only b extended in subclass
-
-class ProPlayer extends player{
-    constructor( height: number,  weight: number,  age: number , private special: number){
-        super(height, weight, age);
-        this.special =  special;
-    }
-
-    getheight = ()=> this.age;
-}
-
-
-const spider = new ProPlayer(100, 150, 20, 10);
-console.log(spider.getheight());

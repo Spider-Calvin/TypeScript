@@ -13,18 +13,14 @@ class player {
         this.age = age;
         this.id = String(Math.random() * 100);
     }
-}
-const abhi = new player(100, 150, 20);
-console.log(abhi.myheight());
-console.log(abhi.weight);
-// protected keyboard can only b extended in subclass
-class ProPlayer extends player {
-    constructor(height, weight, age, special) {
-        super(height, weight, age);
-        this.special = special;
-        this.getheight = () => this.age;
-        this.special = special;
+    get getHeight() {
+        return this.height;
+    }
+    set setHeight(value) {
+        this.height = value;
     }
 }
-const spider = new ProPlayer(100, 150, 20, 10);
-console.log(spider.getheight());
+const abhi = new player(100, 150, 20);
+console.log('Height', abhi.getHeight);
+abhi.setHeight = 500;
+console.log('setted Height', abhi.getHeight);
