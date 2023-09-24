@@ -15,7 +15,7 @@ const myobject: obj = {
 }
 
 let key="name";
-myobject[key as keyof obj]
+myobject[key as keyof typeof myobject]
 
 
 // index signature 
