@@ -15,10 +15,15 @@
 // InstanceType<Type>
 
 // Record<Keys, Type>
-
-type usertype = {
-    name :string,
-    email :string,
+interface UserInfo {
+  age: number;
 }
 
-type user = Record< "name" | "email" | "gender" , string>
+type UserName = "john" | "levi" | "elon" | "jack";
+
+const users: Record<UserName, UserInfo> ={
+  john: { age: 34 },
+  levi: { age: 34 },
+  elon: { age: 34 },
+  jack: { age: 34 },
+};
