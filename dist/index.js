@@ -18,5 +18,11 @@ const myfunc = (a, b) => {
     console.log(a + b);
 };
 // Constructor Parameters<Type>
+class SampleClass {
+    constructor(S, t) {
+        this.S = S;
+        this.t = t;
+    }
+}
 // ReturnType<Type>
 // InstanceType<Type>

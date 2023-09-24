@@ -25,6 +25,13 @@ type Random = Parameters<typeof myfunc> //retuns the parameters as array
 
 // Constructor Parameters<Type>
 
+class SampleClass{ 
+   constructor (public S: string, public t: string){}
+}
+
+type Random1 = ConstructorParameters<typeof SampleClass>
+
+
 // ReturnType<Type>
 
 // InstanceType<Type>
