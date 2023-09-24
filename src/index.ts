@@ -4,13 +4,12 @@
     Type Assertions meaning is "BAAP KO MATH SIKA CHALL"
 */
 
-// const btn = document.getElementById("btn")!;
-// const btn = document.getElementById("btn") as HTMLElement;
-const btn = <HTMLElement>document.getElementById("btn");
+const form  = document.getElementById('form') as HTMLFormElement;
+const myinput = document.querySelector("form > input") as HTMLInputElement;
 
-// const img = <HTMLImageElement>document.getElementById("img");
+form.onsubmit=(e:SubmitEvent) => {
+    e.preventDefault();
+    console.log(myinput.value);
+}
 
-const img = document .querySelector("img") as HTMLImageElement;
-img.src
 
-btn.onclick
