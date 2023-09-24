@@ -1,11 +1,16 @@
 "use strict";
 //DOM manipulation Type Assertions
-/*
-    Type Assertions meaning is "BAAP KO MATH SIKA CHALL"
-*/
-const form = document.getElementById('form');
-const myinput = document.querySelector("form > input");
-form.onsubmit = (e) => {
-    e.preventDefault();
-    console.log(myinput.value);
+const myobject = {
+    name: 'spider',
+    email: 'spider@gmail.com'
 };
+const getName = () => {
+    return myobject.name;
+};
+const getEmail = () => {
+    return myobject.email;
+};
+const getData = (key) => {
+    return myobject[key];
+};
+console.log(getData('name'));

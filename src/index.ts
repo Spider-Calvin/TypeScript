@@ -4,12 +4,25 @@
     Type Assertions meaning is "BAAP KO MATH SIKA CHALL"
 */
 
-const form  = document.getElementById('form') as HTMLFormElement;
-const myinput = document.querySelector("form > input") as HTMLInputElement;
-
-form.onsubmit=(e:SubmitEvent) => {
-    e.preventDefault();
-    console.log(myinput.value);
+interface obj {
+    [key: string]:string;  //index signature 
 }
 
+const myobject: obj = {
+    name: 'spider',
+    email: 'spider@gmail.com'
+}
 
+const getName = (): string => {
+    return myobject.name;
+};
+
+const getEmail = (): string => {
+    return myobject.email;
+};
+
+const getData = (key:string): string => {
+    return myobject[key];
+};
+
+console.log(getData('name'));
