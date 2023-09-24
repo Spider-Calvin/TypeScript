@@ -14,4 +14,7 @@ const calvin:Person ={
     age:22
 }
 
-const ans = func<Person>(calvin)
+const ans = func<Person>(calvin);
+
+const arr:number[] = [];
+const arr2:Array<number> = [];

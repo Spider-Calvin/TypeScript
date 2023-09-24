@@ -8,3 +8,5 @@ const calvin = {
     age: 22
 };
 const ans = func(calvin);
+const arr = [];
+const arr2 = [];
