@@ -11,6 +11,7 @@ class player {
         this.height = height;
         this.weight = weight;
         this.age = age;
+        this.id = String(Math.random() * 100);
     }
 }
 const abhi = new player(100, 150, 20);

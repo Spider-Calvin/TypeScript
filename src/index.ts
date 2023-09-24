@@ -1,11 +1,12 @@
 //classes in typescript
 
 class player {
-
+    public readonly id:string
     constructor( private height: number, public weight: number, protected age: number ) {
         this.height = height;
         this.weight = weight;
         this.age = age;
+        this.id = String(Math.random()*100)
     }
 
     myheight=()=> {
