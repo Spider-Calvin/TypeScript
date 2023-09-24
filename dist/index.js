@@ -13,4 +13,4 @@ const getEmail = () => {
 const getData = (key) => {
     return myobject[key];
 };
-console.log(getData('name'));
+// index signature 

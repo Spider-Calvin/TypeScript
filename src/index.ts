@@ -5,7 +5,8 @@
 */
 
 interface obj {
-    [key: string]:string;  //index signature 
+    name: string;
+    email: string;
 }
 
 const myobject: obj = {
@@ -21,8 +22,8 @@ const getEmail = (): string => {
     return myobject.email;
 };
 
-const getData = (key:string): string => {
+const getData = (key:"name" | "email"): string => {
     return myobject[key];
 };
 
-console.log(getData('name'));
+// index signature 
