@@ -1,33 +1,34 @@
 //Generics in typescript Most Important topic in typescript
-
-type Person ={
+type person ={
     name: string,
-    age:number
+    age: number
 }
 
-type Person2 ={
-    name: string,
-    age:number,
-    email:string
+const usres:person[]=[
+    {
+        name: 'calvin',
+        age: 21
+    },
+    {
+        name: 'spider',
+        age: 25
+    },
+    {
+        name: 'praise',
+        age: 30
+    },
+    {
+        name: 'Jenny',
+        age: 20
+    },
+]
+
+const fliterpeoples = <T, X extends keyof T>(arr:T[] , property:X, value:T[X]) : T[]=>{
+    return arr.filter((item)=>item[property] === value);
 }
 
-const user:Person = {
-    name:'calvin',
-    age:21
-}
+const fliteredpeoples = fliterpeoples(usres, 'name', 'calvin' );
+const fliteredpeoplesbyage = fliterpeoples(usres, 'age', 30 );
 
-const user2:Person2 = {
-    name:'spider',
-    age:21,
-    email:'calvin@gmail.com'
-}
-
-    
-const funcx = <X, Y extends X>(n:X,o: Y):{ n:X, o:Y} => {
-    return { n, o }
-}
-//Extends just extends the type and takes a copy of the original
-    
-const ansX = funcx<Person, Person2>(user, user2);//should pass the object 
-
-console.log(ansX)
+console.log(fliteredpeoples);
+console.log(fliteredpeoplesbyage);
