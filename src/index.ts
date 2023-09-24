@@ -14,20 +14,11 @@
 // ReturnType<Type>
 // InstanceType<Type>
 
-// Required<Type>
-type user = {
-    name?: string,
-    email?: string,
+// Record<Keys, Type>
+
+type usertype = {
+    name :string,
+    email :string,
 }
 
-type user1 = {
-    name?: string,
-    email?: string,
-}
-
-type user2 = Required<user>
-
-const user3:Required<user> ={
-    name:'spider',
-    email:'spider@example.com',
-}
+type user = Record< "name" | "email" | "gender" , string>
