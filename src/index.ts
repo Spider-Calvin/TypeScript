@@ -1,15 +1,26 @@
 //Generics in typescript Most Important topic in typescript
 
-type Person = {
-    name:string,
+type Person ={
+    name: string,
     age:number
-}    
-    
-const func = <T, U>(n:T,o: U):{ n:T, o:U} => {
-    return { n, o }
 }
-    
-const ans = func<number, string>(20,"Lol");
+
+type Person2 ={
+    name: string,
+    age:number,
+    email:string
+}
+
+const user:Person = {
+    name:'calvin',
+    age:21
+}
+
+const user2:Person2 = {
+    name:'spider',
+    age:21,
+    email:'calvin@gmail.com'
+}
 
     
 const funcx = <X, Y extends X>(n:X,o: Y):{ n:X, o:Y} => {
@@ -17,4 +28,6 @@ const funcx = <X, Y extends X>(n:X,o: Y):{ n:X, o:Y} => {
 }
 //Extends just extends the type and takes a copy of the original
     
-const ansX = func<number, number>(20,30);
+const ansX = funcx<Person, Person2>(user, user2);//should pass the object 
+
+console.log(ansX)

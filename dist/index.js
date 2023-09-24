@@ -1,11 +1,17 @@
 "use strict";
 //Generics in typescript Most Important topic in typescript
-const func = (n, o) => {
-    return { n, o };
+const user = {
+    name: 'calvin',
+    age: 21
 };
-const ans = func(20, "Lol");
+const user2 = {
+    name: 'spider',
+    age: 21,
+    email: 'calvin@gmail.com'
+};
 const funcx = (n, o) => {
     return { n, o };
 };
 //Extends just extends the type and takes a copy of the original
-const ansX = func(20, 30);
+const ansX = funcx(user, user2); //should pass the object 
+console.log(ansX);
