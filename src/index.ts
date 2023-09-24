@@ -1,4 +1,22 @@
-type thememode = 'light' | 'dark';
+//classes in typescript
 
-const mode:thememode = 'light';
-// it can have values of the only defined not other values or else it will give error
+class player {
+    private height = 34;
+    weight = 50;
+
+    constructor(height: number, weight: number){
+        this.height = height;
+        this.weight = weight;
+    }
+
+    myheight=()=> {
+       return this.height
+    }
+
+}
+
+const abhi = new player(100, 150);
+
+console.log( abhi.myheight())
+
+// protected keyboard
