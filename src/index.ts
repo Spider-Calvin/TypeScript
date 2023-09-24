@@ -14,16 +14,21 @@
 // ReturnType<Type>
 // InstanceType<Type>
 
-// Record<Keys, Type>
-interface UserInfo {
-  age: number;
+// Pick<Type, Keys>
+interface OrderInfo {
+   readonly id: string;
+   user: string;
+   city: string;
+   state: string;
+   country: string;
+   status: string;
+} 
+type ShippingInfo = Pick<OrderInfo, "city" | "state" | "country">;
+
+// Omit<Type, Keys>
+interface ShippingInfo2 {
+  city: string;
+  state: string;
+  country: string;
 }
-
-type UserName = "john" | "levi" | "elon" | "jack";
-
-const users: Record<UserName, UserInfo> ={
-  john: { age: 34 },
-  levi: { age: 34 },
-  elon: { age: 34 },
-  jack: { age: 34 },
-};
+type Random = Omit<ShippingInfo2,"country">;
