@@ -26,3 +26,8 @@ type user1 = {
 }
 
 type user2 = Required<user>
+
+const user3:Required<user> ={
+    name:'spider',
+    email:'spider@example.com',
+}
