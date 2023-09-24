@@ -6,7 +6,10 @@ interface ProductType {
     id: string;
     offer?: boolean;
 }
-class Product implements ProductType{
+interface GiveId {
+    getId: () => string;
+}
+class Product implements ProductType, GiveId {
     public id: string = String(Math.random () * 1000);
     private lol: boolean = false;
 
@@ -15,6 +18,8 @@ class Product implements ProductType{
         public price: number,
         public stock: number
     ) {}
+    
+    getId = () => this.id;
 }
 
 const spider =  new Product('calvin', 10, 20)
