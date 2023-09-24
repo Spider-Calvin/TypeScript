@@ -25,4 +25,7 @@ class SampleClass {
     }
 }
 // ReturnType<Type>
+const myfunc2 = (a, b) => {
+    return a + b;
+};
 // InstanceType<Type>

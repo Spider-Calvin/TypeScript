@@ -24,7 +24,6 @@ type Random = Parameters<typeof myfunc> //retuns the parameters as array
 
 
 // Constructor Parameters<Type>
-
 class SampleClass{ 
    constructor (public S: string, public t: string){}
 }
@@ -33,5 +32,11 @@ type Random1 = ConstructorParameters<typeof SampleClass>
 
 
 // ReturnType<Type>
+const myfunc2 = (a: number, b: string):string => {
+    return a + b;
+};
+    
+type FuncType = ReturnType< typeof myfunc>
+
 
 // InstanceType<Type>
