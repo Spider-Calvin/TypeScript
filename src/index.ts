@@ -14,16 +14,8 @@ const myobject: obj = {
     email: 'spider@gmail.com'
 }
 
-const getName = (): string => {
-    return myobject.name;
-};
+let key="name";
+myobject[key as keyof obj]
 
-const getEmail = (): string => {
-    return myobject.email;
-};
-
-const getData = (key: keyof obj): string => {
-    return myobject[key];
-};
 
 // index signature 
