@@ -21,5 +21,10 @@ type Random = Exclude<MyUnion, boolean>
 
 
 // Extract<Type, Union>
+type MyUnion2 = string | number | boolean
+type Random2 = Exclude<MyUnion, number>
 
 // NonNullable<Type>
+
+type MyUnion1 = string | number | boolean | null | undefined
+type Random1 = NonNullable<MyUnion>
