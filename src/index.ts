@@ -1,25 +1,9 @@
-//classes in typescript
-interface ProductType {
-    name: string;
-    price: number;
-    stock: number;
-    id: string;
-    offer?: boolean;
-}
-interface GiveId {
-    getId: () => string;
-}
-class Product implements ProductType, GiveId {
-    public id: string = String(Math.random () * 1000);
-    private lol: boolean = false;
+//DOM manipulation Type Assertions
 
-    constructor (
-        public name: string,
-        public price: number,
-        public stock: number
-    ) {}
-    
-    getId = () => this.id;
-}
+/*
+    Type Assertions meaning is "BAAP KO MATH SIKA CHALL"
+*/
 
-const spider =  new Product('calvin', 10, 20)
+const btn = document.getElementById('btn') as HTMLButtonElement;
+
+btn.onclick
