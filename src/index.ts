@@ -14,10 +14,10 @@
 // ReturnType<Type>
 // InstanceType<Type>
 
-// Partial<Type>
+// Required<Type>
 type user = {
-    name: string,
-    email: string,
+    name?: string,
+    email?: string,
 }
 
 type user1 = {
@@ -25,4 +25,4 @@ type user1 = {
     email?: string,
 }
 
-type user2 = Partial<user>
+type user2 = Required<user>
