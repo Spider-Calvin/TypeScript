@@ -1,21 +1,28 @@
-//DOM manipulation Type Assertions
+//Utility CLASS in typeScript
 
-/*
-    Type Assertions meaning is "BAAP KO MATH SIKA CHALL"
-*/
+// Partial<Type>
+// Required<Type>
+// Readonly<Type>
+// Record<Keys, Type>
+// Pick<Type, Keys>
+// Omit<Type, Keys>
+// Exclude<Type, ExcludedUnion>
+// Extract<Type, Union>
+// NonNullable<Type>
+// Parameters<Type>
+// Constructor Parameters<Type>
+// ReturnType<Type>
+// InstanceType<Type>
 
-interface obj {
-    name: string;
-    email: string;
+// Partial<Type>
+type user = {
+    name: string,
+    email: string,
 }
 
-const myobject: obj = {
-    name: 'spider',
-    email: 'spider@gmail.com'
+type user1 = {
+    name?: string,
+    email?: string,
 }
 
-let key="name";
-myobject[key as keyof typeof myobject]
-
-
-// index signature 
+type user2 = Partial<user>
