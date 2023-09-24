@@ -8,4 +8,7 @@
 // const btn = document.getElementById("btn") as HTMLElement;
 const btn = <HTMLElement>document.getElementById("btn");
 
+const img = <HTMLImageElement>document.getElementById("img");
+
 btn.onclick
+img.src

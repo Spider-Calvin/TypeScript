@@ -6,4 +6,6 @@
 // const btn = document.getElementById("btn")!;
 // const btn = document.getElementById("btn") as HTMLElement;
 const btn = document.getElementById("btn");
+const img = document.getElementById("img");
 btn.onclick;
+img.src;
